@@ -95,8 +95,9 @@ html {
 }
 
 #slide {
-    margin-top: 46px;
-   
+   margin-top: 46px;
+   padding-top: 50%;
+   /* background: url('/assets/image/slider/slider1.jpg') top center /cover no-repeat ; */
 }
 
 #content {
