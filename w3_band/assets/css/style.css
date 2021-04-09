@@ -6,6 +6,12 @@
 html {
     font-family: Arial, Helvetica, sans-serif;
 }
+.text-white {
+    color: #fff !important;
+}
+.clear{
+    clear: both;
+}
 #main {
 
 }
@@ -17,6 +23,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 #nav {
     display: inline-block;
@@ -95,13 +102,111 @@ html {
 }
 
 #slide {
+    position: relative;
    margin-top: 46px;
    padding-top: 50%;
-   /* background: url('/assets/image/slider/slider1.jpg') top center /cover no-repeat ; */
+   background: url('../image/slider/slider1.jpg') top center / cover no-repeat;
+}
+
+#slide .text-content{
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+
+#slide .text-heading{
+    font-weight: 500;
+    font-size: 24px;
+    margin: 25px 0;
+}
+
+#slide .text-decrition{
+    font-size: 15px;
 }
 
 #content {
    
+}
+#content .content-section {
+    width: 800px;
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#content .section-sub-heading{
+    font-size: 15px;
+    text-align: center;
+    margin: 25px 0;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+#content .about-text{
+    font-size: 15px;
+    text-align: justify ;
+    line-height: 1.4;
+}
+
+#content .member-list{
+    text-align: center;
+    margin-top: 47px;
+    overflow: hidden;
+}
+#content .member-item{
+    float: left;
+    width: calc(100%/3);
+    
+}
+#content .member-name{
+    font-size: 15px;
+}
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    border-radius: 4px;
+}
+/* Tour section */
+.tour-section{
+    background: #000;
+}
+.tickets-list{
+    background-color: #fff;
+    margin-top: 40px;
+    list-style-type: none;
+}
+.tickets-list li{
+    font-size: 15px;
+    padding: 11px 16px;
+    border-bottom: 1px solid #ddd;
+    color: #757575;
+}
+.tickets-list .solt-out{
+    background-color: #f44336;
+    color: #fff;
+    padding: 3px 4px;
+    margin-left: 16px;
+}
+.tickets-list .quantity{
+    float: right;
+    width: 27px;
+    height: 24px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 24px;
 }
 
 #footer {
