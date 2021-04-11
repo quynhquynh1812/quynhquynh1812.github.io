@@ -209,6 +209,62 @@ html {
     line-height: 24px;
 }
 
+/* Place */
+.place-list{
+    margin: 32px -8px 0;
+    
+}
+
+.place-item{
+    float: left;
+    width: calc(100%/3);
+    padding: 0 8px 48px 8px;
+}
+
+.place-img{
+    width: 100%;
+    display:block;
+    transition: .5s;
+}
+.place-img:hover{
+    opacity: 0.6;
+
+}
+
+.place-body{
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading{
+    font-size: 15px;
+}
+
+.place-time{
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-dsc{
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-btn{
+    color:#fff;
+    background-color: #000;
+    text-decoration: none;
+    padding: 7px 16px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: .5s;
+}
+.place-buy-btn:hover{
+    color: #000;
+    background-color: #ccc;
+}
+
 #footer {
 
 }
