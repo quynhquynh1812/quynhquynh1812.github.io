@@ -34,7 +34,7 @@
 }
 
 /* Mobile */
-@media (max-width: 740px) {
+@media (max-width: 739px) {
     .s-full-width,
     .s-col-full{
         width: 100%;
@@ -80,16 +80,6 @@
     .contact-form{
         margin-top: 32px;
     }
-    .btn{
-        color:#fff;
-        background-color: #000;
-        text-decoration: none;
-        padding: 7px 16px;
-        display: inline-block;
-        margin-top: 15px;
-        transition: .5s;
-        border: none;
-        text-align: center;
-    }
+    
 }   
    

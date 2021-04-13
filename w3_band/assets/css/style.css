@@ -42,6 +42,7 @@ html {
     transition: .5s;
     border: none;
     text-align: center;
+    -webkit-appearance: none;
 }
 .btn:hover{
     cursor: pointer;
@@ -215,6 +216,7 @@ html {
 
 #slide .text-decrition{
     font-size: 15px;
+    text-shadow: 0 0 1px #000 ;
 }
 
 #content {
