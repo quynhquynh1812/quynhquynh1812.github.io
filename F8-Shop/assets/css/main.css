@@ -1062,7 +1062,7 @@
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.4rem;
-    line-height: var(--line-heigth);
+    line-height: calc(var(--line-heigth) * 2);
     height: calc(var(--line-heigth) * 2);
     text-align: center;
     width:110px ;
