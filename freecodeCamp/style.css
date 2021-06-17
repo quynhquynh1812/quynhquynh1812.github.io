@@ -1,0 +1,36 @@
+:root{
+  --header-height:150px;
+}
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+.contain{
+  background-color:#eee;
+}
+#header{
+  position:relative;
+  height:var(--header-height)
+}
+#nav-bar{
+  display:flex;
+  position:fixed;
+  content:"";
+  top:0; 
+}
+.nav{
+    display:inline-block;
+
+}
+.nav-item{
+  display:inline-block;
+  list-style-type:none;
+}
+
+@media (min-width:740px){
+  #header{
+    height:100px;
+  }
+}

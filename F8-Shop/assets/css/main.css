@@ -113,7 +113,7 @@
 
 .header__navbar-item--has-qr:hover .header__qr {
     display: block;
-    z-index: 1;
+    z-index: 4;
 }
 
 .header__navbar-item--has-notify:hover .header__notify{
@@ -963,6 +963,72 @@
     background-color: var(--white-color);
     border-radius: 2px;
 }
+/* Avata */
+.category-avata{
+    display:flex;
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.category-overlay{
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.6);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.category-avatar__img{
+    object-fit: contain;
+    width: 100%;
+    height: auto;   
+}
+.category-avatar__small{
+}
+.category-avatar__img--sm{
+    width: 40%;
+    height: 40%;
+    position: absolute;
+    top: 23%;
+    left: 30%;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    z-index: 1;
+    margin: auto;
+    cursor: pointer;
+}
+
+.category-avata__info{
+    position: absolute;
+    top: 62%;
+    left: 0;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.category-avata__info--heading{
+    color: var(--white-color);
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin: 3px 0 12px 10px;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-overflow: ellipsis;
+}
+.category-avata__info--status{
+    color: #c2bfbf;
+}
+
+/* End avata */
+
+
 
 .category__heading{
     font-size: 1.5rem;
@@ -1321,6 +1387,10 @@ i.home-product-item__like-icon-fill{
     background-color: rgba(255, 216, 64, 0.94);
     text-align: center;
     border-top-right-radius: 2px;
+}
+
+.no-sale{
+    display: none;
 }
 
 .home-product-item__sale-off::after{
