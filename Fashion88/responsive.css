@@ -15,7 +15,7 @@
         font-size: 35px;
     }
     .hastag__text2 span{
-        font-size: 12px;
+        font-size: 14px;
     }
     .navbar__list{
         display: none;
@@ -77,9 +77,9 @@
         flex-direction: column;
 
     }
-    .hastag__img{
+    .hastag1, .hastag2 {
         width: 100vw;
-        height: auto;
+        padding-top: 100%;
     }
     .hastag-content{
         font-size: 8px;
@@ -87,7 +87,6 @@
     .heels-img{
         flex-wrap: wrap;
         width: 50%;
-        /* height: auto; */
     }
     .contact{
         display: block;

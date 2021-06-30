@@ -120,12 +120,18 @@
     display: flex;
     justify-content: center;
 }
-.hastag{
+.hastag1, .hastag2{
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
-}
-.hastag__img{
     width: 50vw;
-    height: auto;
+    padding-top: 50%;
+}
+.hastag1{
+    background-image: url('./assets/images/image2_02.jpg'); 
+}
+.hastag2{
+    background-image: url('./assets/images/image1_03.jpg'); 
 }
 .hastag__text1, .hastag__text2{
     color: rgb( 254, 254, 254 );
