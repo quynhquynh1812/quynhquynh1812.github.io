@@ -87,7 +87,7 @@
     .heels-img{
         flex-wrap: wrap;
         width: 50%;
-        height: auto;
+        /* height: auto; */
     }
     .contact{
         display: block;
