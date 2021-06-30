@@ -119,7 +119,6 @@
 .hastag-box{
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 .hastag{
     position: relative;

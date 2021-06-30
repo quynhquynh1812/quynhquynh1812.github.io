@@ -59,6 +59,7 @@
         width: 100vw;
         height: 100vh;
         background-size: cover;
+        background-position: right;
     }
     .title{
         font-size: 35px;
@@ -115,7 +116,8 @@
     .customer-care{
         width: 100vw;
         padding-top: 35px ;
-        padding-left: 30px;
+        padding-left: 20px;
     }
+ 
 
 }   
