@@ -43,6 +43,19 @@
                 <span class="form-message"></span>
             </div>
 
+            <div class="form-group">
+                <label for="password_confirmation" class="form-label">Giới tính</label>
+                <div>
+                    <input name="gender" type="radio" class="form-control" value="male">
+                    Nam
+                </div>
+                <div>
+                    <input name="gender" type="radio" class="form-control" value="female">
+                    Nữ
+                </div>
+                <span class="form-message"></span>
+            </div>
+
             <button class="form-submit">Đăng ký</button>
         </form>
 
@@ -53,6 +66,7 @@
 
         Validator({
             form: '#form-1',
+            fornGroupSelector: '.form-group',
             errorSelector: '.form-message',
             rules: [
                 Validator.isRequired('#fullname', 'Vui lòng nhập tên đầy đủ của bạn!'),
@@ -60,6 +74,7 @@
                 Validator.isEmail('#email', 'Vui lòng nhập lại email!'),
                 Validator.minLength('#password', 6),
                 Validator.isRequired('#password_confirmation'),
+                Validator.isRequired('input[name="gender"]'),
                 Validator.isConfirmed('#password_confirmation', function () {
                     return document.querySelector('#form-1 #password').value;
                 }, 'Mật khẩu nhập lại không chính xác'),

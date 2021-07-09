@@ -5,20 +5,20 @@
     font-family: 'Roboto', sans-serif;
 }
 body{
-    width: 100vw;
-    height: 100vh;
     background: #2c3e50;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #9796f0, #fbc7d4);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #9796f0, #fbc7d4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container{
-    position: absolute;
-    top: 30px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 500px;
+    margin: 50px auto 20px auto;
+    /* position: absolute; */
+    /* top: 50px; */
+    /* left: 50%; */
+    /* transform: translateX(-50%); */
     background-color: #ffffff;
-    padding: 10px;
+    padding: 12px 12px 12px 18px;
     box-shadow: 1px 1px 5px #9796f0;
     border-radius: 3px;
 }
@@ -27,15 +27,20 @@ body{
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #7c7af0;
+    font-size: 30px;
 }
-.container input{
+#todo {
+    width: 400px;
     padding: 5px;
     outline: none;
     border: none;
     box-shadow: 1px 1px 5px #9796f0;
     border-radius: 3px;
+    font-size: 16px;
+    color: #7c7af0;
+    font-weight: bold;
 }
-.container button{
+.add-btn{
     margin-left: 5px;
     padding: 4px 10px;
     outline: none;
@@ -48,7 +53,159 @@ body{
     transition: .3s linear;
     font-weight: 500;
 }
-.container button:hover{
+.add-btn:hover{
     background-color: #7c7af0;
     color: #ffffff;
+}
+.content__todo{
+    width: 460px;
+    position: relative;
+    list-style: none;
+    border: 1px solid rgba(151, 150, 240, 0.5);
+    box-shadow: 0 0 2px #b8b6fa;
+    margin: 12px 0;
+    padding: 5px  30px;
+    border-radius: 3px;
+    color: #7c7af0;
+    font-weight: bold;
+    cursor: default;
+    word-wrap: break-word;
+
+}
+.btn-delete{
+    position: absolute;
+    top: 50%;
+    right:5px;
+    transform: translateY(-50%);
+    border: none;
+    background-color: #ffffff;
+    font-size: 18px;
+    color: #7c7af0;
+    cursor: pointer;
+    padding: 0 5px;
+}
+.btn-delete:hover{
+    color: rgba(151, 150, 240, 0.6);
+    transition: .3s linear;
+}
+.todo-box{
+    width: 100%;
+}
+.edit-field{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 5px 8px ;
+    outline: none;
+    border: none;
+    box-shadow: 2px 2px 5px #9796f0;
+    border-radius: 3px;
+    font-size: 16px;
+    color: #6966f0;
+    font-weight: bold;
+}
+
+.toggle-todo{
+    position: absolute;
+    top: 50%;
+    left:5px;
+    transform: translateY(-50%);
+}
+
+.toggle-todo:checked + span{
+    text-decoration-line: line-through;
+    opacity: 0.7;
+}
+
+.note{
+    height: 100px;
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 3px;
+    color: #7a78f3;
+    letter-spacing: 0.5px;
+    font-style: italic;
+    text-shadow: gray 0 0 1px;
+}
+
+
+.toggle-todo {
+    position: absolute;
+    top: 50%;
+    left:8px;
+    transform: translateY(-50%);
+	cursor: pointer;
+    }
+.toggle-todo:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: -2.5px;
+    left: -2px;
+    border: 1.5px solid #7876f5;
+    border-radius: 50%;
+    background-color: white;
+}
+.toggle-todo:checked:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 8px;
+    border: solid #6966f0;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 0px;
+    left: 4px;
+}
+.footer{
+    display: flex;
+    font-size: 14px;
+    color: #8f8df3;
+    padding: 10px 0;
+}
+.todo-count{
+    margin: 0 60px 0 0;
+
+}
+#filters {
+margin-right: 30px;
+}
+#filters li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 6px;
+    cursor: pointer;
+}
+.filter-btn{
+    padding: 3px 5px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    color: #8f8df3;
+}
+
+.filter-btn:hover{
+    border: 1px solid rgba(151, 150, 240, 0.3);
+}
+#clear-completed{
+    border: none;
+    background-color: #ffffff;
+    color: #8f8df3;
+    font-size: 14px;
+    cursor: pointer;
+}
+#clear-completed:hover{
+    text-decoration-line:underline;
+}
+.active{
+    border: 1px solid rgba(151, 150, 240, 0.5);
+    border-radius: 3px;
+    padding: 3px 5px;
 }
